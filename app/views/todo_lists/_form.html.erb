@@ -1,0 +1,28 @@
+<%= simple_form_for(@todo_list) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+  </div>
+
+  <table class='table'>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Task Name</th>
+        <th>Completed</th>
+        <th>Due</th>
+      </tr>
+    </thead>
+    <tbody class='fields'>
+      <%= f.simple_fields_for :tasks do |builder| %>
+        <%= render 'task', f: builder %>
+      <% end %>
+    </tbody>
+  </table>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+    <%= link_to_add_row('Add Task', f, :tasks, class: 'btn btn-primary') %>
+  </div>
+<% end %>
