@@ -39,7 +39,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
-    autoprefixer-rails (8.6.3)
+    autoprefixer-rails (9.0.0)
       execjs
     better_errors (2.4.0)
       coderay (>= 1.0.0)
@@ -90,9 +90,9 @@ GEM
     minitest (5.11.3)
     multi_json (1.13.1)
     nio4r (2.3.1)
-    nokogiri (1.8.3)
+    nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
-    puma (3.11.4)
+    puma (3.12.0)
     rack (2.0.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -124,7 +124,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    sass (3.5.6)
+    sass (3.5.7)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -159,7 +159,7 @@ GEM
     turbolinks-source (5.1.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.12)
+    uglifier (4.1.16)
       execjs (>= 0.3.0, < 3)
     web-console (3.6.2)
       actionview (>= 5.0)
@@ -195,4 +195,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.16.2
+   1.16.3
